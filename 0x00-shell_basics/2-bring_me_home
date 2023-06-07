@@ -1,14 +1,3 @@
 #!/bin/bash
-
-# Get the current user's username
-username=$(whoami)
-
-# Retrieve the home directory path from the /etc/passwd file
-home_directory=$(grep "^$username:" /etc/passwd | awk -F: '{print $6}')
-
-# Change the working directory to the user's home directory
-cd "$home_directory"
-
-# Print the current working directory to confirm the change
-pwd
+cd ../../../home
 
