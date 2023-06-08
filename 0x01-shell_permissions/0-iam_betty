@@ -1,2 +1,2 @@
 #!/bin/bash
-runas /user:betty notepad
+runas /user:betty su
